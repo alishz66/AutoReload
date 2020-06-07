@@ -40,9 +40,10 @@
               "outputHashing": "all",
               "sourceMap": false,
               "extractCss": true,
-              "namedChunks": false,
+              "namedChunks": true,
               "extractLicenses": true,
-              "vendorChunk": false,
+              "aot": true,
+              "vendorChunk": true,
               "buildOptimizer": true,
               "budgets": [
                 {
@@ -119,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "AutoReload"
+    }
+  },
+  "defaultProject": "AutoReload",
+  "cli": {
+    "analytics": false
+  }
 }
